@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+}
+.wil {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        font-size: 35px;
+        color: #F677F7;
+        margin-bottom: 20px;
+    }
+
+    .wilayas {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        transition: 0.5s;
+        gap: 15px;
+        .wilaya {
+            width: 250px;
+            height: 350px;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px #F677F7;
+            margin: 0 20px;
+            transition: 0.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            img{
+                width: 250px;
+                height: 310px;
+                border-radius: 15px 15px 0 0;
+                transition: 0.5s;
+                object-fit: cover;
+            }
+            p{
+                font-size: 20px;
+                color: #610d61;
+                text-align: center;
+            }
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: white;
+                background: #881088;
+                padding: 4px;
+                border-radius: 5px;
+                display: none;
+                transition: 0.5s;
+                margin-top: 15px;
+            }
+            .table {
+                flex-direction: row;
+                display: none;
+                width: 100%;
+                position: absolute;
+                bottom: -50px;
+                transition: bottom 1s;
+                border-radius: 15px;
+                overflow: hidden;
+                .code {
+                    border: 1px solid #F677F7;
+                    width: 33.33%;
+                    background: #881088;
+                    p{
+                        font-size: 10px;
+                        color: white;
+                    }
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+            }
+            &:hover {
+                img {
+                    height: 200px;
+                }
+                a {
+                    display: block;
+                }
+                .table {
+                    display: flex;
+                    bottom: 0px;
+                }
+            }
+        }
+    }
+    .btn {
+        width: 250px;
+        height: 50px;
+        margin: 20px auto;
+        text-transform: uppercase;
+        font-size: 20px;
+        color: white;
+        background: #881088;
+        border: 2px solid #501150;
+        outline: none;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+}

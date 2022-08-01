@@ -1,0 +1,819 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  height: 100px;
+  position: fixed;
+  z-index: 1000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar .logo {
+  width: 100px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.navbar .logo h1 {
+  font-size: 35px;
+}
+
+.navbar .logo h1 span {
+  font-size: 25px;
+  color: #F677F7;
+}
+
+.navbar nav i {
+  font-size: 25px;
+  color: #F677F7;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar nav ul li {
+  margin: 0 10px;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar nav ul li a.active {
+  color: #F677F7;
+}
+
+.navbar nav ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #F677F7;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar nav ul li a:hover::after {
+  width: 100%;
+}
+
+.navbar.active {
+  height: 60px;
+  background: #881088c0;
+}
+
+.navbar.active:hover {
+  background: #881088;
+}
+
+.navbar.active .logo {
+  width: 60px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar.active .logo h1 {
+  font-size: 25px;
+}
+
+.navbar.active .logo h1 span {
+  font-size: 20px;
+  color: #F677F7;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+}
+
+.header h1 {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  width: 50%;
+  color: white;
+}
+
+.header h1 span {
+  color: #F677F7;
+  text-transform: uppercase;
+}
+
+.numbers {
+  width: 80%;
+  height: 200px;
+  background: #881088;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 25px;
+  -webkit-box-shadow: 5px 5px 10px #501150;
+          box-shadow: 5px 5px 10px #501150;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.numbers h2 {
+  font-size: 15px;
+  color: #ca5fc5;
+  text-align: center;
+}
+
+.numbers p {
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+.wil {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wil h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #F677F7;
+  margin-bottom: 20px;
+}
+
+.wil .wilayas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wil .wilayas button {
+  position: absolute;
+  height: 13vw;
+  width: 7vw;
+  background: #88108854;
+  border: 1px solid #881088;
+  color: white;
+  outline: none;
+  z-index: 50;
+  cursor: no-drop;
+}
+
+.wil .wilayas button i {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.wil .wilayas button:nth-child(1) {
+  left: 0;
+}
+
+.wil .wilayas button:nth-child(2) {
+  right: 0;
+  cursor: pointer;
+}
+
+.wil .wilayas .wilaya {
+  width: 25vw;
+  height: 35vw;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px #F677F7;
+          box-shadow: 5px 5px 5px #F677F7;
+  margin: 0 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.wil .wilayas .wilaya img {
+  width: 25vw;
+  height: 31vw;
+  border-radius: 15px 15px 0 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wil .wilayas .wilaya p {
+  font-size: 25px;
+  color: #610d61;
+  text-align: center;
+}
+
+.wil .wilayas .wilaya a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  background: #881088;
+  padding: 4px;
+  border-radius: 5px;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 15px;
+}
+
+.wil .wilayas .wilaya .table {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  -webkit-transition: bottom 1s;
+  transition: bottom 1s;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.wil .wilayas .wilaya .table .code {
+  border: 1px solid #F677F7;
+  width: 33.33%;
+  background: #881088;
+}
+
+.wil .wilayas .wilaya .table .code p {
+  font-size: 15px;
+  color: white;
+}
+
+.wil .wilayas .wilaya:hover img {
+  height: 20vw;
+}
+
+.wil .wilayas .wilaya:hover a {
+  display: block;
+}
+
+.wil .wilayas .wilaya:hover .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0px;
+}
+
+.wil .btn {
+  width: 250px;
+  height: 50px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  background: #881088;
+  border: 2px solid #501150;
+  outline: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.wil .btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.wil1 {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wil1 h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #F677F7;
+  margin-bottom: 20px;
+}
+
+.wil1 .wilayas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wil1 .wilayas button {
+  position: absolute;
+  height: 180px;
+  width: 70px;
+  background: #88108854;
+  border: 1px solid #881088;
+  color: white;
+  outline: none;
+  z-index: 50;
+  cursor: no-drop;
+}
+
+.wil1 .wilayas button i {
+  font-size: 50px;
+  margin: 0 20px;
+}
+
+.wil1 .wilayas button:nth-child(1) {
+  left: 0;
+}
+
+.wil1 .wilayas button:nth-child(2) {
+  right: 0;
+  cursor: pointer;
+}
+
+.wil1 .wilayas .wilaya {
+  width: 250px;
+  height: 350px;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 5px #F677F7;
+          box-shadow: 5px 5px 5px #F677F7;
+  margin: 0 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.wil1 .wilayas .wilaya img {
+  width: 250px;
+  height: 310px;
+  border-radius: 15px 15px 0 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wil1 .wilayas .wilaya p {
+  font-size: 25px;
+  color: #610d61;
+  text-align: center;
+}
+
+.wil1 .wilayas .wilaya a {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  background: #881088;
+  padding: 4px;
+  border-radius: 5px;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 15px;
+}
+
+.wil1 .wilayas .wilaya:hover img {
+  height: 280px;
+}
+
+.wil1 .wilayas .wilaya:hover a {
+  display: block;
+}
+
+.wil1 .wilayas .wilaya:hover .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0px;
+}
+
+.wil1 .btn {
+  width: 250px;
+  height: 50px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: white;
+  background: #881088;
+  border: 2px solid #501150;
+  outline: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.contact {
+  width: 100%;
+  height: 80vh;
+}
+
+.contact img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.contact .box {
+  width: 80%;
+  height: 300px;
+  left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: rgba(208, 89, 238, 0.404);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.contact .box .information {
+  width: 50%;
+  min-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .box .information .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.contact .box .information .info .i {
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .box .information .info .i i {
+  color: #610d61;
+  font-size: 20px;
+}
+
+.contact .box .information .info div {
+  margin-left: 20px;
+}
+
+.contact .box .information .info div h4 {
+  font-size: 20px;
+  color: #881088;
+}
+
+.contact .box .msg {
+  width: 50%;
+  min-width: 300px;
+}
+
+.contact .box .msg h2 {
+  color: #610d61;
+  font-size: 25px;
+}
+
+.contact .box .msg form {
+  width: 80%;
+}
+
+.contact .box .msg form input,
+.contact .box .msg form textarea,
+.contact .box .msg form button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid  #881088;
+  background: transparent;
+  padding: 10px;
+}
+
+.contact .box .msg form input::-webkit-input-placeholder,
+.contact .box .msg form textarea::-webkit-input-placeholder,
+.contact .box .msg form button::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact .box .msg form input:-ms-input-placeholder,
+.contact .box .msg form textarea:-ms-input-placeholder,
+.contact .box .msg form button:-ms-input-placeholder {
+  color: white;
+}
+
+.contact .box .msg form input::-ms-input-placeholder,
+.contact .box .msg form textarea::-ms-input-placeholder,
+.contact .box .msg form button::-ms-input-placeholder {
+  color: white;
+}
+
+.contact .box .msg form input::placeholder,
+.contact .box .msg form textarea::placeholder,
+.contact .box .msg form button::placeholder {
+  color: white;
+}
+
+.contact .box .msg form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact .box .msg form button {
+  width: 120px;
+  height: 40px;
+  background: #610d61;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+footer {
+  background: #610d61;
+  margin: -8px 0;
+  padding-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+footer .footer p {
+  color: #414040;
+  text-align: center;
+  margin: 4px;
+}
+
+footer .footer a {
+  text-decoration: none;
+}
+
+footer .footer div h4,
+footer .footer div p {
+  margin: 20px 0;
+  cursor: pointer;
+  text-align: left;
+  color: black;
+}
+
+footer hr {
+  width: 80%;
+  height: 2px;
+  background: black;
+  margin: 10px auto;
+  border: 1px;
+}
+
+footer img {
+  width: 20px;
+}
+
+footer .social {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: white;
+  border: 3px solid black;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -110%);
+          transform: translate(-50%, -110%);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  gap: 20px;
+}
+
+footer .social .contact {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social i {
+  color: white;
+}
+
+footer .social .soc {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+footer .social .soc i {
+  color: black;
+  font-size: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .social .soc .fa-facebook:hover {
+  color: blue;
+}
+
+footer .social .soc .fa-twitter:hover {
+  color: #1d89e2;
+}
+
+footer .social .soc .fa-youtube:hover {
+  color: #d8110a;
+}
+
+footer .social .soc .fa-instagram:hover {
+  color: #d40071;
+}
+
+@media (max-width: 700px) {
+  .navbar nav ul {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: -100vw;
+    background: #881088;
+    height: 250px;
+    width: 100vw;
+    text-align: center;
+  }
+  .navbar nav ul li {
+    margin: 20px 0;
+  }
+  .navbar nav ul li a:hover {
+    color: #F677F7;
+  }
+  .navbar nav ul li a:hover::after {
+    width: 0%;
+  }
+  .navbar nav i {
+    display: block;
+  }
+  .header h1 {
+    width: 80%;
+    left: 20px;
+    font-size: 25px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #610d61;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

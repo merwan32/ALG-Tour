@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"  />
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <title>ALGtour</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h1>ALG<span>tour</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#wilaya">wilayas</a></li>
+                <li><a href="#repas">repas</a></li>
+                <li><a href="">lieux</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+            <i class="fa fa-bars " onclick="myfunction()" ></i>
+        </nav>
+    </div>
+    <div class="header"  id="home">
+        <h1>Trouvez des lieux touristiques, des lieux historiques <span> en algerie </span> et bien plus encore...</h1>
+        <img src="images/accuel.png">
+    </div>
+    <div class="numbers">
+        <div>
+            <p class="num" data-num="732">732</p>
+            <h2>lieux touristiques</h2>
+        </div>
+        <div>
+            <p class="num" data-num="463">463</p>
+            <h2>lieux historiques</h2>
+        </div>
+        <div>
+            <p class="num" data-num="124">124</p>
+            <h2>repas traditionnels</h2>
+        </div>
+        <div>
+            <p class="num" data-num="39">39</p>
+            <h2>robe traditionnelle</h2>
+        </div>
+
+    </div>
+    <div class="wil" id="wilaya">
+        <h1>Top wilayas maybe you will like</h1>
+            <div class="wilayas" >
+                <button onclick="left()"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="right()"><i class="fas fa-chevron-right"></i></button>
+                <div class="wilaya">
+                    <img src="./images/wilaya/25.png">
+                    <p>wilaya de constantine</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>25</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>6</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>12</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/16.png">
+                    <p>wilaya d'alger</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>16</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>13</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>75</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/8.png">
+                    <p>wilaya de bechar</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>08</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>12</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>11</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/6.png">
+                    <p>wilaya de bejaya</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>06</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>19</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>52</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/31.png">
+                    <p>wilaya d'oran</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>31</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>9</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>22</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/11.png">
+                    <p>wilaya de tamenrast</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>11</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>7</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>5</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/13.png">
+                    <p>wilaya de tlemcen</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>13</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>20</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>53</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wilaya">
+                    <img src="./images/wilaya/23.png">
+                    <p>wilaya d'annaba</p>
+                    <a href="">see more <i class="fas fa-arrow-right"></i></a>
+                    <div class="table">
+                        <div class="code">
+                            <p>code</p>
+                            <h1>23</h1>
+                        </div>
+                        <div class="code">
+                            <p>dairas</p>
+                            <h1>6</h1>
+                        </div>
+                        <div class="code">
+                            <p>communes</p>
+                            <h1>12</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <button class="btn"><a href="pages/wilayas.html">view all wilayas</a> <i class="fas fa-arrow-right"></i></button>
+    </div>
+    <div class="wil1" id="repas">
+        <h1>Top repas maybe you will like</h1>
+        <div class="wilayas" >
+            <button onclick="left1()"><i class="fas fa-chevron-left"></i></button>
+            <button onclick="right1()"><i class="fas fa-chevron-right"></i></button>
+            <div class="wilaya">
+                <img src="images/repas/chekchoka.png">
+                <p>chekchoka</p>
+                <a href="">see reset <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/couscous.png">
+                <p>couscous</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/mbese.png">
+                <p>mbeses</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/mhajeb.jpg">
+                <p>mhajeb</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/rechta.png">
+                <p>rechta</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/sfa.png">
+                <p>msfof</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/tjin hlo .png">
+                <p>tjin hlo</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="wilaya">
+                <img src="images/repas/tlitli.png">
+                <p>tlitli</p>
+                <a href="">see recete <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <button class="btn">view all repas <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <img src="images/contact.png">
+        <div class="box">
+            <div class="information">
+                <div class="info">
+                    <div class="i"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>address</h4>
+                        <p>Bougtob - ELBayadh - Algeria</p>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="i"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>phone</h4>
+                        <p>+213 782846684</p>
+                    </div>
+                </div>
+                <div class="info">
+                   <div class="i"><i class="far fa-envelope"></i></div> 
+                    <div>
+                        <h4>email</h4>
+                        <p>Bkar.mrwan32@gmail.com</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="msg">
+                <h2>send message</h2>
+                <form action="https://formsubmit.co/Bkar.mrwan32@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Full name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="write your messagehere .." required></textarea>
+                    <button type="submit">Send</button>
+               </form>
+            </div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#610d61" fill-opacity="1" d="M0,192L48,186.7C96,181,192,171,288,192C384,213,480,267,576,277.3C672,288,768,256,864,224C960,192,1056,160,1152,170.7C1248,181,1344,235,1392,261.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <footer>
+            <div class="footer">
+            <div>
+                <h4>ALG<span style="color:#F677F7;">tour</span> </h4>
+                <p>c'est un site web pour définir le pays d'algérie et <br> sa lieux touristiques et histouriqu <br> et bien plus encore...</p>
+            </div>
+            <div>
+                <h4>Informatio</h4>
+                <a href="#home"><p>home</p></a>
+                <p>about me</p>
+                <p>contact me</p>
+                <p>events</p>
+            </div>
+            <div>
+                <h4>Links</h4>
+                <p>wilayas</p>
+                <p>repas</p>
+                <p>lieux touristiques</p>
+                <p>lieux historiques</p>
+            </div>
+        </div>
+        <div class="social">
+            <div class="contact">
+            <i class="fa fa-fw fa-envelope"></i>
+            </div>
+            <div class="soc">
+                <i class="fab fa-facebook" title="facebook"></i>
+                <i class="fab fa-twitter" title="twitter"></i>
+                <i class="fab fa-youtube" title="youtube"></i>
+                <i class="fab fa-instagram" title="instagram"></i>
+            </div>
+        </div>
+        <hr>
+        <p>© 2021 . all right reserved by BEK-shoping</p>
+        <p>designed by Bekkar Merwan</p>
+        <p>created by Bekkar Merwan</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
